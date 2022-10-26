@@ -191,12 +191,12 @@ public class ClientesDAO {
                 obj.setComplemento(rs.getString("complemento"));
                 obj.setBairro(rs.getString("bairro"));
                 obj.setCidade(rs.getString("cidade"));
-                obj.setUf(rs.getString("estado"));
-                
-               
-                
+                obj.setUf(rs.getString("estado"));             
+                  
             }
             return obj;
+            
+           
             
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "Cliente não encontrado" + e);
